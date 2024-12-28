@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fixed-bottom-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 50; /* Agar berada di atas elemen lainnya */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #FBAF40 70%, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Cooper black';
+    
+}
+
+/* Default - dropdown disembunyikan */
+#servicesDropdown {
+    display: none;
+    z-index: 9999;  /* Pastikan dropdown berada di atas elemen lain */
+}
+
+/* Tampilkan dropdown ketika class 'show' ditambahkan */
+#servicesDropdown.show {
+    display: block;
+}
+
+/* modal promo */
+.modal {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* akhir modal promo */
+
+
+
